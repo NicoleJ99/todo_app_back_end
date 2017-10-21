@@ -3,6 +3,8 @@ class TodoController < ApplicationController
  end
  
  def show
+ @todo_description = "feed the baby" 
+ @todo_pomodoro_estimate = 4 
  end
  
  

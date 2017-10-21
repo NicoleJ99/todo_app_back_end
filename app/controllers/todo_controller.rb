@@ -10,6 +10,9 @@ class TodoController < ApplicationController
      elsif todo_id =="2" 
          @todo_description = "do garza h.w." 
         @todo_pomodoro_estimate = 2
+        elsif todo_id =="3" 
+         @todo_description = "order from mayas" 
+        @todo_pomodoro_estimate = 6
      end
  end 
  

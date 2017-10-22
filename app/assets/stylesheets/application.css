@@ -58,6 +58,7 @@ img {  height: 30px;
 }
 #add-new-todo-button:active{ 
     box-shadow: 1px 1px 1px ;
-    .completed-todo{
+}
+.completed-todo{
         text-decoration: line-through
 }

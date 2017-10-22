@@ -1,26 +1,23 @@
-<h1> 
-
 <h1> <img class="company-logo"
     src="https://public.3.basecamp.com/p/iahgNshn1oKq98sWGf1q89Vo/uploads/511042491/download/CodeNow%20Logo.png"></img>Workshop Todo List 
     <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet"></h1>
-   
-    <ul>
-    <li> <input type="checkbox"><a href="show/1">Make the curriculum  <span class="pomodoro-estimate">4 pomodoros</span> <a href="show.html"</li>
-    <li class="completed to do"
-    <li> <input type="checkbox"><a href="show/2">buy workshop supplies</a></li> 
-     <li><input type="checkbox"><a href="show/3">order food for sat</a>  </li>
-      <li><input type="checkbox"><a href="show/4">check pre-work assign </a> </li>
-       <li><input type="checkbox"><a href="show/5">send workshop location to all students </a></li>
-        <li><input type="checkbox"><a href="show/6">have a great workshop <span class="pomodoro-estimate">0 pomodors</span> </a> </li> 
-        
-        </ul>
- 
+
+<ul>
+<% @todos.each do |todo| %>
+ <li> 
+   <input type="checkbox">
+   <a href="show/<%= todo.id %>"><%= todo.description %></a> 
+   <span class="pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
+  </li>
+<% end %>
+</ul>
+     
+<div id="new-todo-block">
+ <a href="/todo/new" class="button add-new-todo-button">Add a todo</a>
    <p> <input type="text"> </p>
     <p> <input type="number" > </p>
     
     <input id="add-new-todo-button" type="submit" value="add todo">
-</h1>
-
-
+</div>
     
     

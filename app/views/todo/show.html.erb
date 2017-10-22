@@ -5,7 +5,7 @@
 <span class= "pomodoro-estimate large-pomodoro-estimate"><%= @todo.pomodoro_estimate %> pomodoros</span>
 <h3>Todo #<%= params[:id] %></h3>
 <a href="/todo/edit/<%= @todo.id %>">Edit</a>
-<a href="/todo/destroy/<%= @todo.id %>">Delete</a>
+<a href="/todo/destroy</%= @todo.id %>">Delete</a>
 <a href="index.html">Go back...</a>
 
 </h1>
